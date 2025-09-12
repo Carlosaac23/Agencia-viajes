@@ -3,4 +3,30 @@ extends ./layout/index
 block contenido
   main.container.mt-5
     .row
-      h1= pagina
+      .col-md-5
+        img(src="images/nosotros.jpg", alt="Nosotros image", class="img-fluid")
+      .col-md-7
+        h1 #{pagina}
+        blockquote Quisque vitae dolor ultrices, volutpat ipsum sed, congue tellus. Vestibulum ornare eu tellus quis volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+        p Proin molestie neque vitae lobortis mollis. Nulla suscipit sem at lacus dapibus, sed egestas nisl vehicula. Vivamus et dictum turpis, ut pretium arcu. Ut vestibulum hendrerit consequat. Aliquam sit amet nisi quis justo maximus semper at vitae enim. Mauris odio ipsum, mollis eu leo sodales, viverra tempor velit. Vivamus condimentum sapien mollis metus ullamcorper, vitae sodales urna convallis.
+
+        p Vestibulum elit tortor, bibendum nec interdum nec, pulvinar non felis. In hac habitasse platea dictumst. Morbi ornare lobortis dui, quis sagittis enim viverra non. Proin velit neque, interdum eget felis vitae, placerat maximus justo. Pellentesque risus risus, faucibus molestie cursus et, ornare in elit. In posuere, odio quis iaculis elementum, nibh leo porttitor nisi, vitae tempor ligula lectus id tellus. Phasellus laoreet est laoreet felis pulvinar, ut dictum dolor commodo. Integer id dictum felis. Curabitur viverra sit amet purus nec consectetur.
+  
+  .listado-iconos
+    .container.mt-5.py-5.text-center
+      .row
+        .col-md-4
+          img(src="images/icono_seguridad.svg", alt="Security icon", class="img-fluid mb-4")
+          h2.mb-4 Seguridad
+          p elementum, nibh leo porttitor nisi, vitae tempor ligula lectus id tellus. Phasellus laoreet est laoreet felis pulvinar, ut dictum dolor commodo.
+        
+        .col-md-4
+          img(src="images/icono_destinos.svg", alt="Destinations icon", class="img-fluid mb-4")
+          h2.mb-4 Mejores Destinos
+          p elementum, nibh leo porttitor nisi, vitae tempor ligula lectus id tellus. Phasellus laoreet est laoreet felis pulvinar, ut dictum dolor commodo.
+        
+        .col-md-4
+          img(src="images/icono_precios.svg", alt="Prices icon", class="img-fluid mb-4")
+          h2.mb-4 Mejores Precios
+          p elementum, nibh leo porttitor nisi, vitae tempor ligula lectus id tellus. Phasellus laoreet est laoreet felis pulvinar, ut dictum dolor commodo.
