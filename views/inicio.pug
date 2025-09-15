@@ -1,6 +1,32 @@
 extends ./layout/index
 
+block slider
+  .slider
+    h1 Rio De Janeiro
+    em aventura
+
 block contenido
   main.container.mt-5
-    .row
-      h1 #{pagina}
+    h2.text-center.mb-5 Sobre Nosotros
+    .row.mb-5
+      .col-md-6
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat ex non orci sagittis, quis efficitur purus dapibus. Phasellus rhoncus dui at dictum ultrices. Sed ultricies vestibulum lacus, at elementum enim fringilla non. 
+        p Praesent iaculis turpis leo, ac pharetra ligula ultrices at. Quisque rhoncus ligula non mi fringilla, ac sagittis purus scelerisque. Suspendisse ornare tempor nibh eget imperdiet. Duis lacinia tortor quis ex congue, vel condimentum enim volutpat. 
+      .col-md-6
+        img(src="images/inicio_nosotros.jpg", alt="Nosotros image", class="img-fluid")
+      
+    include ./layout/bloque_viajes
+  
+  .descuento
+    .container
+      .row
+        .col-md-6 
+          .contenido
+            h3 5% de descuento
+            p.titulo Viaje a Canada
+            p.fecha 20 de Marzo de 2026 - 28 de Marzo de 2026
+            p.precio $2,500 USD
+
+  .container
+    h2.mt-5.text-center Testimoniales
+    include ./layout/bloque_testimoniales
