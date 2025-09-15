@@ -123,7 +123,11 @@ footer .nav a,
 
 .descuento {
   height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/cupon.jpg);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../img/cupon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -131,7 +135,14 @@ footer .nav a,
 @media (min-width: 768px) {
   .descuento {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 50%, transparent 100%), url(../img/cupon.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        transparent 50%,
+        transparent 100%
+      ),
+      url(../img/cupon.jpg);
   }
 }
 
@@ -167,12 +178,12 @@ i {
 }
 
 .testimoniales p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: normal;
 }
 
 .testimoniales p::before {
-  background-image: url(../img/quote.jpg);
+  background-image: url(../images/quote.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40px;
